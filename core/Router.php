@@ -5,8 +5,10 @@ class Router
 {
     public Request $request;
     public function __construct()
-    {
+    { 
+
         $this->request=new Request();
+        
     }
 
     public array $routes = [];
@@ -21,7 +23,7 @@ class Router
         $method= $this->request->method();
         $callback=$this->routes[$method][$path]?? false;
 
-        
+
         if(is_array($callback))
     {
         $callback[0]=new $callback[0]();
