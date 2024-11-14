@@ -1,0 +1,17 @@
+{
+    "name": "ymir/benasi",
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "Marko"
+        }
+    ],
+    "require": {
+        "ext-json":"*",
+        "ext-mysqli":"*"
+    }
+}
