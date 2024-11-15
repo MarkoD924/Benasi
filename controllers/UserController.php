@@ -13,6 +13,8 @@ class UserController extends BaseController
         $model->firstName= 'Marko';
         $model->lastName= 'Dimitrijevic';
 
+        
+
         $this->view->render("getUser",'main',$model);   
     }
 }
